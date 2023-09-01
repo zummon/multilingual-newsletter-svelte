@@ -4,13 +4,14 @@
   let lang = 'en'
 
   $: translate = language[lang]
-  $: document.title = translate.title
+
   $: document.documentElement.lang = lang
   $: document.documentElement.style.fontFamily = translate.fontFamily
 </script>
 
 <svelte:head>
   <link href={translate.fontSrc} rel="stylesheet">
+  <title>{translate.title}</title>
 </svelte:head>
 
 <div class="max-w-3xl lg:max-w-4xl mx-auto">
@@ -41,8 +42,8 @@
     </div>
   </div>
 
-  <div class="px-4 md:px-8 pb-7 md:pb-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-5 lg:gap-6">
-    <div class="sm:row-span-2 md:row-span-2">
+  <div class="px-4 md:px-8 pb-7 md:pb-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 divide-y sm:divide-y-0 md:divide-x">
+    <div class="sm:row-span-2 md:row-span-2 p-2 md:p-3 lg:p-4">
       <img class="rounded" src="https://cdn.leonardo.ai/users/87e86c7c-bff9-4f33-a0db-2bf812d319fc/generations/e3cfb088-048c-4be3-92c5-9b3de0c4b14d/variations/Default_Luis_Royo_style_illustration_of_a_beautiful_longhaired_2_e3cfb088-048c-4be3-92c5-9b3de0c4b14d_1.jpg" alt="" />
       <p class="mt-6 text-justify">
         { translate["whats_it"] }
@@ -61,17 +62,17 @@
         </svg>
       </div>
     </div>
-    <div class="">
+    <div class="p-2 md:p-3 lg:p-4">
       <p class="first-letter:text-7xl first-letter:mr-2 first-letter:float-left text-justify">
         { translate["other_text_1"] }
       </p>
     </div>
-    <div class="">
+    <div class="p-2 md:p-3 lg:p-4">
       <p class="first-letter:text-7xl first-letter:mr-2 first-letter:float-left text-justify">
         { translate["other_text_2"] }
       </p>
     </div>
-    <div class="sm:col-span-2 md:col-span-2">
+    <div class="sm:col-span-2 md:col-span-2 p-2 md:p-3 lg:p-4">
       <p class="first-letter:text-7xl first-letter:mr-2 first-letter:float-left text-justify">
         { translate["other_text_3"] }
       </p>
