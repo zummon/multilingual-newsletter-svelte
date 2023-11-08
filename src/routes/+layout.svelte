@@ -1,10 +1,12 @@
 <script>
-  import language from './language.json'
+  import '../app.css'
 
+  export let data
+
+  let language = data.language
   let lang = 'en'
 
   $: translate = language[lang]
-
   $: document.documentElement.lang = lang
   $: document.documentElement.style.fontFamily = translate.fontFamily
 </script>
@@ -77,3 +79,5 @@
     </p>
   </div>
 </div>
+
+<slot></slot>
