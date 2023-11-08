@@ -50,6 +50,7 @@
       { translate["whats_it"] }
     </p>
     <div class="mt-6">
+      <!-- [Tabler Icons](https://tablericons.com/) -->
       <span class="sr-only">icon icon-tabler icon-tabler-chart-dots-3</span>
       <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
