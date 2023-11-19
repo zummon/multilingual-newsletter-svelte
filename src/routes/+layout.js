@@ -1,7 +1,7 @@
 import language from '../lib/language.json'
-// - [lipsum](https://www.lipsum.com/)
-// - [typographic](https://generator.lorem-ipsum.info/)
-// - [Thai](https://lorem.in.th/)
+// https://www.lipsum.com/
+// https://generator.lorem-ipsum.info/
+// https://lorem.in.th/
 
 export async function load(){
 
