@@ -6,6 +6,7 @@ import language from '../lib/language.json'
 export async function load(){
 
 	return {
-		language
+		language,
+		defLang: Object.keys(language)[0]
 	}
 }
