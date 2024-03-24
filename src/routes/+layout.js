@@ -45,7 +45,7 @@ export async function load(){
 
 	return {
 		language,
-		defLang: Object.keys(language.default)[0]
+		defLang: Object.keys(language)[0]
 	}
 }
 
