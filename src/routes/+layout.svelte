@@ -1,6 +1,6 @@
 <script>
+	// import "../app.css";
   import { onMount } from "svelte";
-	import "../app.css";
 
 	export let data;
 
@@ -13,7 +13,6 @@
 
 		document.documentElement.lang = lang
 		document.documentElement.style.fontFamily = translate.fontFamily
-
 	}
 
 	onMount(() => {
