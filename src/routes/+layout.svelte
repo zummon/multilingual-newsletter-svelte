@@ -1,6 +1,7 @@
 <script>
 	import "../app.css";
   import { onMount } from "svelte";
+	import { goto } from '$app/navigation';
 
 	export let data;
 
@@ -13,6 +14,8 @@
 
 		document.documentElement.lang = lang
 		document.documentElement.style.fontFamily = translate.fontFamily
+
+		goto(`/${lang}`)
 	}
 
 	onMount(() => {
